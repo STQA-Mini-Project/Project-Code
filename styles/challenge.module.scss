@@ -1,0 +1,65 @@
+.container {
+    margin-top: 4rem;
+}
+
+.challenge {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    .crumb {
+        margin-top: 1rem;
+        color: #667380;
+        a {
+            color: #667380;
+            //    text-decoration: none;
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 20px;
+        padding: 0.4rem 1rem;
+        cursor: pointer;
+        width: max-content;
+        &:hover {
+            background-color: #b3b3b3;
+        }
+    }
+
+    .days {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+        // background-color: aqua;
+        .day,
+        .dayDone {
+            width: 10rem;
+            height: 8rem;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+                width: 45%;
+            }
+
+            &:hover {
+                border: 2px solid #a6ff00;
+            }
+        }
+
+        .dayDone {
+            background-color: #a6ff00;
+        }
+    }
+}
